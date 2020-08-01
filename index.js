@@ -1,5 +1,11 @@
-const testVar = {}
+function superbowlWin(sbInfo) {
+  let win = sbInfo.find(sb => {
+  	return sb.result === "W"
+  })
 
-function testFunc() {
-  return "hi"
+  if (win != undefined) {
+  	return win.year
+  } else {
+  	return win
+  }
 }
